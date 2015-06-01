@@ -1,0 +1,23 @@
+package clay.physics;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+
+
+public class Renderer {
+	
+	private JFrame frame;
+	public Renderer(JFrame frame){
+		this.frame = frame;
+	}
+	
+	
+	public void render(){
+		Graphics g = frame.getGraphics();
+		g.setColor(Color.RED);
+		g.drawOval(100,100,600,400);
+		g.dispose();
+	}
+
+}

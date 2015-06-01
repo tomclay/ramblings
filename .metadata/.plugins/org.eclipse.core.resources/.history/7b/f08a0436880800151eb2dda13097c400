@@ -1,0 +1,36 @@
+package clay.physics;
+
+import javax.swing.*;
+
+public class Main implements Runnable {
+	
+	public JFrame frame;
+	public Renderer rend;
+	public ForceList forcelist;
+
+	public static void main(String[] args){
+		
+	}
+	public void Main(){
+		frame = new JFrame();
+		
+		
+		
+		
+		
+		
+		rend = new Renderer(frame);
+		forcelist = new ForceList();
+	
+	}
+	public void run(){
+		
+		while(true){
+			
+			rend.render();
+			try { Thread.sleep(50); }
+			catch(InterruptedException ie) {}
+		}
+		
+	}
+}
